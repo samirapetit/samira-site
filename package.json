@@ -1,7 +1,7 @@
 {
   "name": "samira-petit-sophrologue",
   "version": "1.0.0",
-  "description": "Site web professionnel pour Samira Petit - Sophrologue RNCP",
+  "description": "Site web de Samira Petit - Sophrologue RNCP",
   "main": "index.html",
   "scripts": {
     "dev": "live-server --port=3000 --open=/index.html",
