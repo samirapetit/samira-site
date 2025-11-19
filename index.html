@@ -1,432 +1,576 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Samira Petit - Sophrologue RNCP</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Prata&family=Satisfy&display=swap" rel="stylesheet">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Prata&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-background"></div>
-        <div class="hero-wave"></div>
+      <div class="hero-background"></div>
+      <div class="hero-wave"></div>
 
-        <!-- Navigation -->
-        <nav class="navbar">
-            <div class="logo">
-                <img src="images/logo.svg" alt="Logo Samira Petit">
-            </div>
-            <ul class="nav-links">
-                <li><a href="#" >Acceuil</a></li>
-                <li><a href="#">Sophrologue RNCP</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#">Blog de Samira</a></li>
-            </ul>
-            <div class="nav-icon">
-                <a
+      <!-- Navigation -->
+      <nav class="navbar">
+        <div class="logo">
+          <img src="images/logo.svg" alt="Logo Samira Petit" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="#" class="active">Acceuil</a></li>
+          <li><a href="sophrologie.html">Sophrologue RNCP</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#">Blog de Samira</a></li>
+        </ul>
+        <div class="nav-icon">
+          <a
             href="https://wa.me/221776638665?text=Bonjour%20Villa%20Yemaya%2C%20je%20souhaite%20obtenir%20plus%20d'informations."
             target="_blank"
             rel="noopener noreferrer"
             class="whatsappButton"
             aria-label="Nous contacter sur WhatsApp"
           >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.513" />
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.513"
+              />
             </svg>
           </a>
-            </div>
-        </nav>
-
-        <!-- Hero Content -->
-        <div class="hero-content reveal-left">
-            <h1>Epanouissez-vous.</h1>
-            <p class="hero-description">
-                S'épanouir c'est atteindre un stade de développement plein et heureux, c'est se sentir bien dans ses faits et gestes, c'est aussi comprendre qui on est et comment on fonctionne.
-            </p>
-            <div class="hero-buttons">
-                <button class="btn btn-primary" onClick="document.getElementById('decouvrir').scrollIntoView();">Découvrir la sophrologie</button>
-                <button class="btn btn-primary">Réserver</button>
-            </div>
         </div>
+      </nav>
 
-        <!-- Hero Image -->
-        <div class="hero-image reveal-right">
-            <img src="images/Samira.png" alt="Sophrologie">
+      <!-- Hero Content -->
+      <div class="hero-content reveal-left">
+        <h1>Epanouissez-vous.</h1>
+        <p class="hero-description">
+          S'épanouir c'est atteindre un stade de développement plein et heureux,
+          c'est se sentir bien dans ses faits et gestes, c'est aussi comprendre
+          qui on est et comment on fonctionne.
+        </p>
+        <div class="hero-buttons">
+          <button
+            class="btn btn-primary"
+            onClick="document.getElementById('decouvrir').scrollIntoView();"
+          >
+            Découvrir la sophrologie
+          </button>
+          <button class="btn btn-primary">Réserver</button>
         </div>
+      </div>
+
+      <!-- Hero Image -->
+      <div class="hero-image reveal-right">
+        <img src="images/Samira.png" alt="Sophrologie" />
+      </div>
     </section>
 
     <!-- Section Equilibre -->
     <section class="section-equilibre" id="decouvrir">
-        <div class="container">
-            <div class="section-header reveal-fade">
-                <h2>Retrouvez l'équilibre entre votre <span class="highlight">corps</span> et votre <span class="highlight">esprit</span></h2>
-                <p class="section-description">
-                    La sophrologie s'adresse à toute personne souhaitant retrouver un équilibre entre le corps et l'esprit. Chaque séance est une invitation à mieux se connaître, à relâcher les tensions, et à accueillir la sérénité dans son quotidien.
-                </p>
-            </div>
-
-            <div class="benefits-grid">
-                <div class="benefit-card reveal-scale">
-                    <div class="benefit-icon">
-                        <img src="/images/confiance.svg" alt="Confiance">
-                    </div>
-                    <h3>Confiance en soi</h3>
-                </div>
-                <div class="benefit-card reveal-scale">
-                    <div class="benefit-icon">
-                        <img src="/images/stress.svg" alt="Stress">
-                    </div>
-                    <h3>Gestion du Stress</h3>
-                </div>
-                <div class="benefit-card reveal-scale">
-                    <div class="benefit-icon">
-                        <img src="/images/sommeil.svg" alt="Sommeil">
-                    </div>
-                    <h3>Sommeil et détente</h3>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header reveal-fade">
+          <h2>
+            Retrouvez l'équilibre entre votre
+            <span class="highlight">corps</span> et votre
+            <span class="highlight">esprit</span>
+          </h2>
+          <p class="section-description">
+            La sophrologie s'adresse à toute personne souhaitant retrouver un
+            équilibre entre le corps et l'esprit. Chaque séance est une
+            invitation à mieux se connaître, à relâcher les tensions, et à
+            accueillir la sérénité dans son quotidien.
+          </p>
         </div>
+
+        <div class="benefits-grid">
+          <div class="benefit-card reveal-scale">
+            <div class="benefit-icon">
+              <img src="/images/confiance.svg" alt="Confiance" />
+            </div>
+            <h3>Confiance en soi</h3>
+          </div>
+          <div class="benefit-card reveal-scale">
+            <div class="benefit-icon">
+              <img src="/images/stress.svg" alt="Stress" />
+            </div>
+            <h3>Gestion du Stress</h3>
+          </div>
+          <div class="benefit-card reveal-scale">
+            <div class="benefit-icon">
+              <img src="/images/sommeil.svg" alt="Sommeil" />
+            </div>
+            <h3>Sommeil et détente</h3>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Section Controle -->
     <section class="section-controle">
-        <div class="container">
-            <div class="controle-content reveal-fade">
-                <h2>Prenez le contrôle de <span class="highlight">votre vie.</span></h2>
-                <p>
-                    Contrôle de routine, contrôle de papiers, contrôle de santé, contrôle de performances...Tous ces contrôles sont le fait de tiers. Votre vie, vos ambitions, vos envies sont-ils sous votre contrôle plein et bienveillant. C'est vous et vous seul qui êtes maître de votre philosophie, capitaine de votre bateau. Il est parfois bon de se recentrer sur "son essentiel".
-                </p>
-            </div>
+      <div class="container">
+        <div class="controle-content reveal-fade">
+          <h2>
+            Prenez le contrôle de <span class="highlight">votre vie.</span>
+          </h2>
+          <p>
+            Contrôle de routine, contrôle de papiers, contrôle de santé,
+            contrôle de performances...Tous ces contrôles sont le fait de tiers.
+            Votre vie, vos ambitions, vos envies sont-ils sous votre contrôle
+            plein et bienveillant. C'est vous et vous seul qui êtes maître de
+            votre philosophie, capitaine de votre bateau. Il est parfois bon de
+            se recentrer sur "son essentiel".
+          </p>
         </div>
+      </div>
     </section>
 
     <!-- Section Pourquoi Consulter -->
     <section class="section-consulter">
-        <div class="container">
-            <h2 class="reveal-fade">Pourquoi <span class="highlight">Consulter</span> ?</h2>
+      <div class="container">
+        <h2 class="reveal-fade">
+          Pourquoi <span class="highlight">Consulter</span> ?
+        </h2>
 
-            <div class="reasons-grid">
-                <div class="reason-card reveal-scale">
-                    <div class="reason-icon">
-                        <img src="images/maincoeur.svg" alt="Anxiété">
-                    </div>
-                    <h3>Anxiété & stress chronique</h3>
-                    <p>Apprendre à relâcher la pression, à apaiser le mental et à retrouver un sentiment de calme intérieur.</p>
-                </div>
-                <div class="reason-card reveal-scale">
-                    <div class="reason-icon">
-                        <img src="images/maincoeur.svg" alt="Sommeil">
-                    </div>
-                    <h3>Troubles du sommeil</h3>
-                    <p>Retrouver un endormissement plus rapide et un sommeil plus réparateur grâce à des techniques de respiration et de relaxation.</p>
-                </div>
-                <div class="reason-card reveal-scale">
-                    <div class="reason-icon">
-                        <img src="images/maincoeur.svg" alt="Confiance">
-                    </div>
-                    <h3>Manque de confiance en soi</h3>
-                    <p>(Re)découvrir ses ressources intérieures, renforcer son estime de soi et oser s'affirmer dans sa vie personnelle comme professionnelle.</p>
-                </div>
-                <div class="reason-card reveal-scale">
-                    <div class="reason-icon">
-                        <img src="images/maincoeur.svg" alt="Lâcher prise">
-                    </div>
-                    <h3>Difficulté à lâcher prise</h3>
-                    <p>Apprendre à vivre le moment présent, à prendre du recul face aux événements et à se libérer de la surcharge mentale.</p>
-                </div>
+        <div class="reasons-grid">
+          <div class="reason-card reveal-scale">
+            <div class="reason-icon">
+              <img src="images/maincoeur.svg" alt="Anxiété" />
             </div>
+            <h3>Anxiété & stress chronique</h3>
+            <p>
+              Apprendre à relâcher la pression, à apaiser le mental et à
+              retrouver un sentiment de calme intérieur.
+            </p>
+          </div>
+          <div class="reason-card reveal-scale">
+            <div class="reason-icon">
+              <img src="images/maincoeur.svg" alt="Sommeil" />
+            </div>
+            <h3>Troubles du sommeil</h3>
+            <p>
+              Retrouver un endormissement plus rapide et un sommeil plus
+              réparateur grâce à des techniques de respiration et de relaxation.
+            </p>
+          </div>
+          <div class="reason-card reveal-scale">
+            <div class="reason-icon">
+              <img src="images/maincoeur.svg" alt="Confiance" />
+            </div>
+            <h3>Manque de confiance en soi</h3>
+            <p>
+              (Re)découvrir ses ressources intérieures, renforcer son estime de
+              soi et oser s'affirmer dans sa vie personnelle comme
+              professionnelle.
+            </p>
+          </div>
+          <div class="reason-card reveal-scale">
+            <div class="reason-icon">
+              <img src="images/maincoeur.svg" alt="Lâcher prise" />
+            </div>
+            <h3>Difficulté à lâcher prise</h3>
+            <p>
+              Apprendre à vivre le moment présent, à prendre du recul face aux
+              événements et à se libérer de la surcharge mentale.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Section Emotions -->
     <section class="section-emotions">
-        <div class="container">
-            <div class="emotions-layout">
-                <div class="emotions-image reveal-left">
-                    <div class="placeholder-image"></div>
-                </div>
-                <div class="emotions-content reveal-right">
-                    <h2>Gérez vos <span class="highlight">Émotions.</span></h2>
-                    <p>
-                        Les émotions sont le propre de l'humanité, elles font partie de nous et sont souvent le fait de facteurs internes aussi bien qu'externes.
-                    </p>
-                    <p>
-                        Les émotions nous font réagir de façon physiologique, en pleine conscience, mais aussi psychologique. Gérer ses émotions est un apprentissage technique, nécessitant parfois un accompagnement spécifique
-                    </p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="emotions-layout">
+          <div class="emotions-image reveal-left">
+            <div class="placeholder-image"></div>
+          </div>
+          <div class="emotions-content reveal-right">
+            <h2>Gérez vos <span class="highlight">Émotions.</span></h2>
+            <p>
+              Les émotions sont le propre de l'humanité, elles font partie de
+              nous et sont souvent le fait de facteurs internes aussi bien
+              qu'externes.
+            </p>
+            <p>
+              Les émotions nous font réagir de façon physiologique, en pleine
+              conscience, mais aussi psychologique. Gérer ses émotions est un
+              apprentissage technique, nécessitant parfois un accompagnement
+              spécifique
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Section Citation -->
     <section class="section-citation">
-        <div class="container">
-            <div class="citation-content reveal-scale">
-                <div class="citation-avatar">
-                    <img src="images/olivier.png" alt="Olivier Föllmi">
-                </div>
-                <blockquote>
-                    <p>"Voyager, c'est partir à la découverte de l'autre, et <span class="highlight">le premier inconnu à découvrir, c'est vous</span> !"</p>
-                    <cite>Olivier Föllmi</cite>
-                </blockquote>
-            </div>
+      <div class="container">
+        <div class="citation-content reveal-scale">
+          <div class="citation-avatar">
+            <img src="images/olivier.png" alt="Olivier Föllmi" />
+          </div>
+          <blockquote>
+            <p>
+              "Voyager, c'est partir à la découverte de l'autre, et
+              <span class="highlight"
+                >le premier inconnu à découvrir, c'est vous</span
+              >
+              !"
+            </p>
+            <cite>Olivier Föllmi</cite>
+          </blockquote>
         </div>
+      </div>
     </section>
 
     <!-- Section Découverte -->
     <section class="section-decouverte">
-        <div class="container">
-            <div class="decouverte-layout">
-                <div class="decouverte-content reveal-left">
-                    <h2>Découvrez Qui <span class="highlight">vous êtes.</span></h2>
-                    <p>
-                        Vous êtes vous déjà poser la question: est ce que la personne que vous voyez dans ce miroir est bien la personne que vous êtes.
-                    </p>
-                    <p>
-                        Souvent, la réponse n'est ni évidente, ni complexe. Lorsque l'on commence à se poser cette question, le travail de la découverte de soi a déjà commencé. Quelque fois, un accompagnement personnalisé permet de prendre du recul et de continuer ce travail de recherche.
-                    </p>
-                    <p>
-                        C'est un processus long, qui peut être périlleux mais dont l'aboutissement est toujours une victoire personnelle. Belle découverte à vous!
-                    </p>
-                </div>
-                <div class="decouverte-image reveal-right">
-                    <div class="placeholder-image"></div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="decouverte-layout">
+          <div class="decouverte-content reveal-left">
+            <h2>Découvrez Qui <span class="highlight">vous êtes.</span></h2>
+            <p>
+              Vous êtes vous déjà poser la question: est ce que la personne que
+              vous voyez dans ce miroir est bien la personne que vous êtes.
+            </p>
+            <p>
+              Souvent, la réponse n'est ni évidente, ni complexe. Lorsque l'on
+              commence à se poser cette question, le travail de la découverte de
+              soi a déjà commencé. Quelque fois, un accompagnement personnalisé
+              permet de prendre du recul et de continuer ce travail de
+              recherche.
+            </p>
+            <p>
+              C'est un processus long, qui peut être périlleux mais dont
+              l'aboutissement est toujours une victoire personnelle. Belle
+              découverte à vous!
+            </p>
+          </div>
+          <div class="decouverte-image reveal-right">
+            <div class="placeholder-image"></div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Section Témoignages -->
     <section class="section-temoignages">
-        <div class="container">
-            <h2 class="reveal-fade">Ils ont adorés leur <span class="highlight">séance</span></h2>
+      <div class="container">
+        <h2 class="reveal-fade">
+          Ils ont adorés leur <span class="highlight">séance</span>
+        </h2>
 
-            <div class="testimonials-slider">
-                <div class="testimonial-card reveal-scale">
-                    <div class="testimonial-header">
-                        <div class="testimonial-user">
-                            <img src="http://localhost:3845/assets/6a3e822488699b837d652a2fdc8dde0649fe2ce2.png" alt="Abdel K.">
-                            <div>
-                                <h4>Abdel K.</h4>
-                                <span>Il y a 1 semaine</span>
-                            </div>
-                        </div>
-                        <div class="testimonial-tags">
-                            <span class="tag">3 séances</span>
-                            <span class="tag">Coaching Personnel</span>
-                        </div>
-                    </div>
-                    <h3>"Une séance inoubliable"</h3>
-                    <p>Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+        <div class="testimonials-slider">
+          <div class="testimonial-card reveal-scale">
+            <div class="testimonial-header">
+              <div class="testimonial-user">
+                <img
+                  src="http://localhost:3845/assets/6a3e822488699b837d652a2fdc8dde0649fe2ce2.png"
+                  alt="Abdel K."
+                />
+                <div>
+                  <h4>Abdel K.</h4>
+                  <span>Il y a 1 semaine</span>
                 </div>
-
-                <div class="testimonial-card reveal-scale">
-                    <div class="testimonial-header">
-                        <div class="testimonial-user">
-                            <img src="http://localhost:3845/assets/6a3e822488699b837d652a2fdc8dde0649fe2ce2.png" alt="Abdel K.">
-                            <div>
-                                <h4>Abdel K.</h4>
-                                <span>Il y a 1 semaine</span>
-                            </div>
-                        </div>
-                        <div class="testimonial-tags">
-                            <span class="tag">3 séances</span>
-                            <span class="tag">Coaching Personnel</span>
-                        </div>
-                    </div>
-                    <h3>"Une séance inoubliable"</h3>
-                    <p>Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                </div>
-
-                <div class="testimonial-card reveal-scale">
-                    <div class="testimonial-header">
-                        <div class="testimonial-user">
-                            <img src="http://localhost:3845/assets/6a3e822488699b837d652a2fdc8dde0649fe2ce2.png" alt="Abdel K.">
-                            <div>
-                                <h4>Abdel K.</h4>
-                                <span>Il y a 1 semaine</span>
-                            </div>
-                        </div>
-                        <div class="testimonial-tags">
-                            <span class="tag">3 séances</span>
-                            <span class="tag">Coaching Personnel</span>
-                        </div>
-                    </div>
-                    <h3>"Une séance inoubliable"</h3>
-                    <p>Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                </div>
+              </div>
+              <div class="testimonial-tags">
+                <span class="tag">3 séances</span>
+                <span class="tag">Coaching Personnel</span>
+              </div>
             </div>
+            <h3>"Une séance inoubliable"</h3>
+            <p>
+              Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              vulputate libero et velit interdum, ac aliquet odio mattis. Class
+              aptent taciti sociosqu ad litora torquent per conubia nostra, per
+              inceptos himenaeos.
+            </p>
+          </div>
 
-            <div class="slider-dots">
-                <span class="dot active"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
+          <div class="testimonial-card reveal-scale">
+            <div class="testimonial-header">
+              <div class="testimonial-user">
+                <img
+                  src="http://localhost:3845/assets/6a3e822488699b837d652a2fdc8dde0649fe2ce2.png"
+                  alt="Abdel K."
+                />
+                <div>
+                  <h4>Abdel K.</h4>
+                  <span>Il y a 1 semaine</span>
+                </div>
+              </div>
+              <div class="testimonial-tags">
+                <span class="tag">3 séances</span>
+                <span class="tag">Coaching Personnel</span>
+              </div>
             </div>
+            <h3>"Une séance inoubliable"</h3>
+            <p>
+              Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              vulputate libero et velit interdum, ac aliquet odio mattis. Class
+              aptent taciti sociosqu ad litora torquent per conubia nostra, per
+              inceptos himenaeos.
+            </p>
+          </div>
+
+          <div class="testimonial-card reveal-scale">
+            <div class="testimonial-header">
+              <div class="testimonial-user">
+                <img
+                  src="http://localhost:3845/assets/6a3e822488699b837d652a2fdc8dde0649fe2ce2.png"
+                  alt="Abdel K."
+                />
+                <div>
+                  <h4>Abdel K.</h4>
+                  <span>Il y a 1 semaine</span>
+                </div>
+              </div>
+              <div class="testimonial-tags">
+                <span class="tag">3 séances</span>
+                <span class="tag">Coaching Personnel</span>
+              </div>
+            </div>
+            <h3>"Une séance inoubliable"</h3>
+            <p>
+              Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              vulputate libero et velit interdum, ac aliquet odio mattis. Class
+              aptent taciti sociosqu ad litora torquent per conubia nostra, per
+              inceptos himenaeos.
+            </p>
+          </div>
         </div>
-    </section>
 
-    <!-- Section Réservation -->
-    <section class="section-reservation" id="contact">
-        <div class="container">
-            <h2 class="reveal-fade">Réserver votre <span class="highlight-alt">séance</span></h2>
-
-            <div class="reservation-form-container reveal-scale">
-                <form class="reservation-form">
-                    <div class="form-header">
-                        <h3>Réserver votre séance</h3>
-                        <p>Laissez nous vos coordonées afin de faciliter le contact</p>
-                    </div>
-
-                    <div class="form-row">
-                        <input type="text" placeholder="Nom" class="form-input">
-                        <input type="text" placeholder="Prénom" class="form-input">
-                    </div>
-
-                    <div class="form-group">
-                        <input type="email" placeholder="Votre adresse email" class="form-input">
-                    </div>
-
-                    <div class="form-group">
-                        <input type="tel" placeholder="Numéro de téléphone (Whatsapp)" class="form-input">
-                    </div>
-
-                    <div class="form-group">
-                        <textarea placeholder="Comment pouvons nous vous aider ?" class="form-textarea"></textarea>
-                    </div>
-
-                    <button type="submit" class="btn btn-submit">Prendre Contact</button>
-
-                    <p class="form-footer">
-                        By contacting us, you agree to our <strong>Terms of service</strong> and <strong>Privacy Policy</strong>
-                    </p>
-                </form>
-            </div>
+        <div class="slider-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
         </div>
+      </div>
     </section>
-
     <!-- Section FAQ -->
     <section class="section-faq">
-        <div class="container">
-            <div class="faq-layout">
-                <div class="faq-image reveal-left">
-                    <img src="images/faq.png" alt="FAQ">
+      <div class="container">
+        <div class="faq-layout">
+          <div class="faq-image reveal-left">
+            <img src="images/faq.png" alt="FAQ" />
+          </div>
+          <div class="faq-content reveal-right">
+            <h2>F.A.Q</h2>
+            <div class="faq-list">
+              <div class="faq-item active">
+                <div class="faq-question">
+                  <h4>Combien de temps dure une séance de sophrologie ?</h4>
+                  <button class="faq-toggle">−</button>
                 </div>
-                <div class="faq-content reveal-right">
-                    <h2>F.A.Q</h2>
-                    <div class="faq-list">
-                        <div class="faq-item active">
-                            <div class="faq-question">
-                                <h4>Combien de temps dure une séance de sophrologie ?</h4>
-                                <button class="faq-toggle">−</button>
-                            </div>
-                            <div class="faq-answer">
-                                <p>Une séance dure en moyenne entre 45 minutes et 1 heure. Cela laisse le temps d'échanger, de pratiquer les exercices, puis de revenir doucement à soi.</p>
-                            </div>
-                        </div>
-
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <h4>La sophrologie est-elle une thérapie ?</h4>
-                                <button class="faq-toggle">+</button>
-                            </div>
-                            <div class="faq-answer">
-                                <p>La sophrologie est une méthode psychocorporelle qui vise à harmoniser le corps et l'esprit.</p>
-                            </div>
-                        </div>
-
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <h4>À quelle fréquence faut-il pratiquer ?</h4>
-                                <button class="faq-toggle">+</button>
-                            </div>
-                            <div class="faq-answer">
-                                <p>Une séance par semaine est généralement recommandée pour un suivi optimal.</p>
-                            </div>
-                        </div>
-
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <h4>Est-ce que la sophrologie peut remplacer un traitement médical ?</h4>
-                                <button class="faq-toggle">+</button>
-                            </div>
-                            <div class="faq-answer">
-                                <p>Non, la sophrologie est un complément aux traitements médicaux, elle ne les remplace pas.</p>
-                            </div>
-                        </div>
-
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <h4>Puis-je pratiquer à distance ?</h4>
-                                <button class="faq-toggle">+</button>
-                            </div>
-                            <div class="faq-answer">
-                                <p>Oui, les séances en visioconférence sont tout à fait possibles et efficaces.</p>
-                            </div>
-                        </div>
-
-                        <div class="faq-item">
-                            <div class="faq-question">
-                                <h4>Est-ce que tout le monde peut pratiquer la sophrologie ?</h4>
-                                <button class="faq-toggle">+</button>
-                            </div>
-                            <div class="faq-answer">
-                                <p>Oui, la sophrologie s'adapte à tous les âges et toutes les situations.</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="faq-answer">
+                  <p>
+                    Une séance dure en moyenne entre 45 minutes et 1 heure. Cela
+                    laisse le temps d'échanger, de pratiquer les exercices, puis
+                    de revenir doucement à soi.
+                  </p>
                 </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h4>La sophrologie est-elle une thérapie ?</h4>
+                  <button class="faq-toggle">+</button>
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    La sophrologie est une méthode psychocorporelle qui vise à
+                    harmoniser le corps et l'esprit.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h4>À quelle fréquence faut-il pratiquer ?</h4>
+                  <button class="faq-toggle">+</button>
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    Une séance par semaine est généralement recommandée pour un
+                    suivi optimal.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h4>
+                    Est-ce que la sophrologie peut remplacer un traitement
+                    médical ?
+                  </h4>
+                  <button class="faq-toggle">+</button>
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    Non, la sophrologie est un complément aux traitements
+                    médicaux, elle ne les remplace pas.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h4>Puis-je pratiquer à distance ?</h4>
+                  <button class="faq-toggle">+</button>
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    Oui, les séances en visioconférence sont tout à fait
+                    possibles et efficaces.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h4>
+                    Est-ce que tout le monde peut pratiquer la sophrologie ?
+                  </h4>
+                  <button class="faq-toggle">+</button>
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    Oui, la sophrologie s'adapte à tous les âges et toutes les
+                    situations.
+                  </p>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+    </section>
+    <!-- Section Réservation -->
+    <section class="section-reservation" id="contact">
+      <div class="container">
+        <h2 class="reveal-fade">
+          Réserver votre <span class="highlight-alt">séance</span>
+        </h2>
+
+        <div class="reservation-form-container reveal-scale">
+          <form class="reservation-form">
+            <div class="form-header">
+              <h3>Réserver votre séance</h3>
+              <p>Laissez nous vos coordonées afin de faciliter le contact</p>
+            </div>
+
+            <div class="form-row">
+              <input type="text" placeholder="Nom" class="form-input" />
+              <input type="text" placeholder="Prénom" class="form-input" />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="email"
+                placeholder="Votre adresse email"
+                class="form-input"
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="tel"
+                placeholder="Numéro de téléphone (Whatsapp)"
+                class="form-input"
+              />
+            </div>
+
+            <div class="form-group">
+              <textarea
+                placeholder="Comment pouvons nous vous aider ?"
+                class="form-textarea"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-submit">
+              Prendre Contact
+            </button>
+
+            <p class="form-footer">
+              En nous contactant, vous acceptez nos
+              <strong>Conditions générales</strong> et notre
+              <strong>Politique de confidentialité</strong>
+            </p>
+          </form>
+        </div>
+      </div>
     </section>
 
+    <div
+      class="calendly-inline-widget"
+      data-url="https://calendly.com/contact-samirapetit/30min?hide_gdpr_banner=1&background_color=ffff&primary_color=0a3b4a"
+      style="min-width: 320px; height: 700px"
+    ></div>
+    <script
+      type="text/javascript"
+      src="https://assets.calendly.com/assets/external/widget.js"
+      async
+    ></script>
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="logo-footer">
-                <img src="images/logo.svg" alt="Logo Samira Petit">
+      <div class="container">
+        <div class="footer-content">
+          <div class="logo-footer">
+            <img src="images/logo.svg" alt="Logo Samira Petit" />
+          </div>
+          <div class="footer-column">
+            <h3>Services</h3>
+            <ul>
+              <li><a href="#">Réserver</a></li>
+              <li><a href="#">Sophrologie RNCP</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Contact</h3>
+            <ul>
+              <li><a href="#">Qui suis-je ?</a></li>
+              <li><a href="#">Témoignages</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <div class="footer-contact">
+              <div class="contact-item">
+                <img
+                  src="http://localhost:3845/assets/b9bb43111a72fd79442f813d833718bd669e6de4.png"
+                  alt="Phone"
+                />
+                <span>+221 00 00 00 00 00</span>
+              </div>
+              <div class="contact-item">
+                <img
+                  src="http://localhost:3845/assets/4a2d090d550c0d85aa431bb5c1941a78b972f873.png"
+                  alt="Instagram"
+                />
+                <span>@@SamiraPetit</span>
+              </div>
             </div>
-                <div class="footer-column">
-                    <h3>Services</h3>
-                    <ul>
-                        <li><a href="#">Réserver</a></li>
-                        <li><a href="#">Présentation</a></li>
-                        <li><a href="#">Galerie</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Contact</h3>
-                    <ul>
-                        <li><a href="#">Notre Equipe</a></li>
-                        <li><a href="#">Nos Chambres</a></li>
-                        <li><a href="#">Témoignage</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <div class="footer-contact">
-                        <div class="contact-item">
-                            <img src="http://localhost:3845/assets/b9bb43111a72fd79442f813d833718bd669e6de4.png" alt="Phone">
-                            <span>+221 00 00 00 00 00</span>
-                        </div>
-                        <div class="contact-item">
-                            <img src="http://localhost:3845/assets/4a2d090d550c0d85aa431bb5c1941a78b972f873.png" alt="Instagram">
-                            <span>@Villa yemaya</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>@ 2025-2026 Samira Petit</p>
-                <p>Tous droits réservés</p>
-            </div>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <p>@ 2025-2026 Samira Petit</p>
+          <p>Tous droits réservés</p>
+        </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

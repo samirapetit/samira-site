@@ -325,6 +325,9 @@ body {
     backdrop-filter: blur(10px); /* Effet de flou moderne */
 }
 
+.nav-links a.active {
+    color: #fff;
+}
 .logo svg {
     width: 45px;
     height: 45px;
@@ -349,7 +352,6 @@ body {
 
 .nav-links a.active {
     color: white;
-    font-weight: 700;
 }
 
 .nav-links a:hover {
