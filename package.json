@@ -1,0 +1,43 @@
+{
+  "name": "samira-petit-sophrologue",
+  "version": "1.0.0",
+  "description": "Site web professionnel pour Samira Petit - Sophrologue RNCP",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server --port=3000 --open=/index.html",
+    "start": "live-server --port=8080 --open=/index.html",
+    "build": "echo 'Static site - no build needed'",
+    "validate": "html-validator --file=index.html --format=text",
+    "optimize": "npm run optimize:images && npm run optimize:css",
+    "optimize:images": "imagemin images/* --out-dir=images/optimized",
+    "optimize:css": "cleancss -o style.min.css style.css"
+  },
+  "keywords": [
+    "sophrologie",
+    "wellness",
+    "therapeutic-website",
+    "landing-page"
+  ],
+  "author": "Matthieu",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "html-validator-cli": "^7.1.0",
+    "imagemin-cli": "^7.0.0",
+    "imagemin-webp": "^7.0.0",
+    "clean-css-cli": "^5.6.2",
+    "eslint": "^8.55.0"
+  },
+  "dependencies": {},
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "not dead",
+    "iOS >= 12",
+    "Android >= 8"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JesuisMat/samira-site.git"
+  }
+}
