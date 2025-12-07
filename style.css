@@ -353,6 +353,7 @@ body {
   padding: 0;
   flex: 1;
   justify-content: center;
+  order: 1;
 }
 
 .nav-links a {
@@ -404,6 +405,8 @@ body {
   position: relative;
   box-shadow: 0 2px 8px rgba(37, 211, 102, 0.3);
   animation: whatsappPulse 2s ease-in-out infinite;
+  flex-shrink: 0;
+  order: 3;
 }
 
 .whatsappButton:hover {
@@ -444,6 +447,7 @@ body {
   cursor: pointer;
   padding: 0;
   z-index: 1001;
+  order: 2;
 }
 
 .mobile-menu-toggle span {
@@ -557,19 +561,19 @@ body {
     display: none;
   }
 
-  .nav-links .whatsappButton {
-    width: 36px;
-    height: 36px;
-  }
-
-  .nav-links .whatsappButton svg {
-    width: 18px;
-    height: 18px;
-  }
-
   .logo img {
     width: 40px;
     height: 40px;
+  }
+
+  .whatsappButton {
+    width: 40px;
+    height: 40px;
+  }
+
+  .whatsappButton svg {
+    width: 24px;
+    height: 24px;
   }
 
   /* Mobile overlay */
