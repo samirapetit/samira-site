@@ -130,20 +130,34 @@ function initTestimonialsSlider() {
     });
 }
 
-// Form Validation and Submission
+// ⚙️ CONFIGURATION
+const MAKE_WEBHOOK_URL = 'https://hook.eu1.make.com/dc9uy1p1sdxsnji234rjmok9j1j6lvct'; // ← Colle ton URL Make ici
+
 function initForm() {
     const form = document.querySelector('.reservation-form');
-
     if (!form) return;
 
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
         e.preventDefault();
 
-        // Get form values
+        // 1️⃣ EXTRACTION DES DONNÉES
         const formData = new FormData(form);
         const data = Object.fromEntries(formData);
+        
+        // Ajoute des métadonnées utiles (optionnel mais recommandé)
+        data.timestamp = new Date().toISOString(); // Horodatage
+        data.source = window.location.pathname; // Page d'origine
+        data.userAgent = navigator.userAgent; // Appareil utilisé
 
-        // Simple validation
+        data.name = data.nom || '';
+        data.prénom = data.prénom || '';
+        data.email = data.email || '';
+        data.phone = data.telephone || '';
+        data.message = data.message || '';
+        
+
+
+        // 2️⃣ VALIDATION
         const inputs = form.querySelectorAll('.form-input, .form-textarea');
         let isValid = true;
 
@@ -156,28 +170,54 @@ function initForm() {
             }
         });
 
-        if (isValid) {
-            // Simulate form submission
-            const submitBtn = form.querySelector('.btn-submit');
-            const originalText = submitBtn.textContent;
-            submitBtn.textContent = 'Envoi en cours...';
-            submitBtn.disabled = true;
+        if (!isValid) return; // Stop si validation échoue
 
-            setTimeout(() => {
-                submitBtn.textContent = 'Message envoyé!';
+        // 3️⃣ ENVOI VERS MAKE
+        const submitBtn = form.querySelector('.btn-submit');
+        const originalText = submitBtn.textContent;
+        submitBtn.textContent = 'Envoi en cours...';
+        submitBtn.disabled = true;
+
+        try {
+            const response = await fetch(MAKE_WEBHOOK_URL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data) // Convertit l'objet en JSON
+            });
+
+            // 4️⃣ GESTION DU SUCCÈS
+            if (response.ok) {
+                submitBtn.textContent = '✅ Message envoyé!';
                 submitBtn.style.backgroundColor = '#4caf50';
+                form.reset(); // Vide le formulaire
 
+                // Réinitialise le bouton après 2 secondes
                 setTimeout(() => {
                     submitBtn.textContent = originalText;
                     submitBtn.disabled = false;
                     submitBtn.style.backgroundColor = '';
-                    form.reset();
                 }, 2000);
-            }, 1500);
+            } else {
+                throw new Error(`Erreur HTTP: ${response.status}`);
+            }
+
+        } catch (error) {
+            // 5️⃣ GESTION DES ERREURS
+            console.error('Erreur envoi:', error);
+            submitBtn.textContent = '❌ Erreur, réessayez';
+            submitBtn.style.backgroundColor = '#f44336';
+
+            setTimeout(() => {
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+                submitBtn.style.backgroundColor = '';
+            }, 3000);
         }
     });
 
-    // Remove error styling on input
+    // Retire le style d'erreur au fur et à mesure de la saisie
     const inputs = form.querySelectorAll('.form-input, .form-textarea');
     inputs.forEach(input => {
         input.addEventListener('input', () => {
