@@ -12,6 +12,14 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Prata&family=Satisfy&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Samira - Sophrologue" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <meta name="apple-mobile-web-app-title" content="Samira - Sophrologue" />
   </head>
   <body>
     <!-- Hero Section -->
@@ -94,7 +102,7 @@
 
       <!-- Hero Image -->
       <div class="hero-image reveal-right">
-        <img src="images/Samira.png" alt="Sophrologie" />
+        <img src="images/samira1.png" alt="Sophrologie" />
       </div>
     </section>
 
@@ -201,93 +209,98 @@
       </div>
     </section>
 
- <!-- Section Réservation -->
-<section class="section-reservation" id="contact">
-  <div class="container">
-    <h2 class="reveal-fade">
-      Réserver votre <span class="highlight-alt">séance</span>
-    </h2>
+    <!-- Section Réservation -->
+    <section class="section-reservation" id="contact">
+      <div class="container">
+        <h2 class="reveal-fade">
+          Réserver votre <span class="highlight-alt">séance</span>
+        </h2>
 
-    <div class="reservation-form-container reveal-scale">
-      <form class="reservation-form">
-        <div class="form-header">
-          <h3>Je reste à votre écoute</h3>
-          <p>Laissez nous vos coordonnées afin de faciliter le contact</p>
+        <div class="reservation-form-container reveal-scale">
+          <form class="reservation-form">
+            <div class="form-header">
+              <h3>Je reste à votre écoute</h3>
+              <p>Laissez nous vos coordonnées afin de faciliter le contact</p>
+            </div>
+
+            <div class="form-row">
+              <!-- ✅ AJOUT DE name="nom" -->
+              <input
+                type="text"
+                name="nom"
+                placeholder="Nom"
+                class="form-input"
+                required
+              />
+              <!-- ✅ AJOUT DE name="prenom" -->
+              <input
+                type="text"
+                name="prenom"
+                placeholder="Prénom"
+                class="form-input"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <!-- ✅ AJOUT DE name="email" -->
+              <input
+                type="email"
+                name="email"
+                placeholder="Votre adresse email"
+                class="form-input"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <!-- ✅ AJOUT DE name="telephone" -->
+              <input
+                type="tel"
+                name="telephone"
+                placeholder="Numéro de téléphone (Whatsapp)"
+                class="form-input"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <!-- ✅ AJOUT DE name="message" -->
+              <textarea
+                name="message"
+                placeholder="Comment pouvons nous vous aider ?"
+                class="form-textarea"
+                rows="4"
+              ></textarea>
+            </div>
+
+            <!-- ✅ HONEYPOT ANTI-SPAM (invisible) -->
+            <input
+              type="text"
+              name="honeypot"
+              style="display: none"
+              tabindex="-1"
+              autocomplete="off"
+            />
+
+            <button type="submit" class="btn btn-submit">
+              Prendre Contact
+            </button>
+
+            <p class="form-footer">
+              En nous contactant, vous acceptez nos
+              <a href="cgv.html" target="_blank"
+                ><strong>Conditions générales</strong></a
+              >
+              et notre
+              <a href="politique-confidentialite.html" target="_blank"
+                ><strong>Politique de confidentialité</strong></a
+              >
+            </p>
+          </form>
         </div>
-
-        <div class="form-row">
-          <!-- ✅ AJOUT DE name="nom" -->
-          <input 
-            type="text" 
-            name="nom"
-            placeholder="Nom" 
-            class="form-input"
-            required
-          />
-          <!-- ✅ AJOUT DE name="prenom" -->
-          <input 
-            type="text" 
-            name="prenom"
-            placeholder="Prénom" 
-            class="form-input"
-            required
-          />
-        </div>
-
-        <div class="form-group">
-          <!-- ✅ AJOUT DE name="email" -->
-          <input
-            type="email"
-            name="email"
-            placeholder="Votre adresse email"
-            class="form-input"
-            required
-          />
-        </div>
-
-        <div class="form-group">
-          <!-- ✅ AJOUT DE name="telephone" -->
-          <input
-            type="tel"
-            name="telephone"
-            placeholder="Numéro de téléphone (Whatsapp)"
-            class="form-input"
-            required
-          />
-        </div>
-
-        <div class="form-group">
-          <!-- ✅ AJOUT DE name="message" -->
-          <textarea
-            name="message"
-            placeholder="Comment pouvons nous vous aider ?"
-            class="form-textarea"
-            rows="4"
-          ></textarea>
-        </div>
-
-        <!-- ✅ HONEYPOT ANTI-SPAM (invisible) -->
-        <input 
-          type="text" 
-          name="honeypot" 
-          style="display:none" 
-          tabindex="-1" 
-          autocomplete="off"
-        />
-
-        <button type="submit" class="btn btn-submit">
-          Prendre Contact
-        </button>
-
-        <p class="form-footer">
-          En nous contactant, vous acceptez nos
-          <a href="cgv.html" target="_blank"><strong>Conditions générales</strong></a> et notre
-          <a href="politique-confidentialite.html" target="_blank"><strong>Politique de confidentialité</strong></a>
-        </p>
-      </form>
-    </div>
-  </div>
-</section>
+      </div>
+    </section>
     <!-- Calendly inline widget begin -->
     <div
       class="calendly-inline-widget"
@@ -327,7 +340,11 @@
             <ul>
               <li><a href="mentions-legales.html">Mentions légales</a></li>
               <li><a href="cgv.html">CGV</a></li>
-              <li><a href="politique-confidentialite.html">Politique de confidentialité</a></li>
+              <li>
+                <a href="politique-confidentialite.html"
+                  >Politique de confidentialité</a
+                >
+              </li>
             </ul>
           </div>
           <div class="footer-column">
