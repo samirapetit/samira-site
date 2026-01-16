@@ -95,7 +95,10 @@
           >
             Découvrir la sophrologie
           </button>
-          <button class="btn btn-primary">Réserver votre séance</button>
+          <button class="btn btn-primary"
+          onClick="document.getElementById('calendly-inline-widget').scrollIntoView();"
+          >Réserver votre séance</button>
+          
         </div>
       </div>
 
@@ -590,6 +593,7 @@
     </section>
 
     <div
+    id="calendly-inline-widget"
       class="calendly-inline-widget"
       data-url="https://calendly.com/contact-samirapetit/30min?hide_gdpr_banner=1&background_color=ffff&primary_color=#0a3b4a"
       style="min-width: 320px; height: 700px"
@@ -664,7 +668,7 @@
           </div>
         </div>
         <div class="footer-bottom">
-          <p>@ 2025-2026 Samira Petit</p>
+          <p>@ 2026-2027 Samira Petit</p>
           <p>Tous droits réservés</p>
           <a
             href="https://www.linkedin.com/in/samirapetit/"
