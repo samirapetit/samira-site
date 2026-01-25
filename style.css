@@ -2075,6 +2075,61 @@ blockquote cite {
     }
 }
 
+/* Powered by Coble */
+.powered-by {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.powered-by-text {
+    font-family: 'Satoshi-regular', sans-serif;
+    font-size: 13px;
+    color: #ffffff;
+    opacity: 0.7;
+    font-weight: 400;
+    padding-top: 0.4rem;
+}
+
+.coble-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    opacity: 0.8;
+}
+
+.coble-link:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
+.coble-logo {
+    height: auto;
+    width: auto;
+    max-height: 18px;
+}
+
+@media (max-width: 768px) {
+    .powered-by {
+        flex-direction: row;
+        gap: 6px;
+        padding-top: 15px;
+        margin-top: 15px;
+    }
+
+    .powered-by-text {
+        font-size: 11px;
+    }
+
+    .coble-logo {
+        max-height: 16px;
+    }
+}
+
 
 /* Smooth Scroll Animations */
 @media (prefers-reduced-motion: no-preference) {
